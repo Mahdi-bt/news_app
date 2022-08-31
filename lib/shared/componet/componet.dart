@@ -4,7 +4,7 @@ import 'package:conditional_builder_null_safety/conditional_builder_null_safety.
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
-Widget buildArticlItem(article, context) => Padding(
+Widget buildArticlItem(Article article, context) => Padding(
       padding: const EdgeInsets.all(20.0),
       child: Row(
         children: [

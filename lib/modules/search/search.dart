@@ -49,11 +49,14 @@ class Search extends StatelessWidget {
                     ),
                   ),
                 ),
-                Expanded(
-                  child:articalBulder(
-                 list,context,
-                 ),
-                  ),
+                state is NewsGetSearchLoadingState
+                    ? CircularProgressIndicator()
+                    : Expanded(
+                        child: articalBulder(
+                          list,
+                          context,
+                        ),
+                      ),
               ],
             ),
           ),
